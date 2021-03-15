@@ -1,0 +1,8 @@
+share_this: "Share this"
+reading_time_min: "%d min read"
+poweredby: 'Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a>'
+latest_posts: 'Latest Posts'
+read_more: 'Read More'
+author_bio_fallback_end_of_post: 'Read more posts by this author.'

@@ -1,0 +1,15 @@
+{% assign words_per_minute = site.words_per_minute | default: 200 %}
+
+{% assign cont = post.content %}
+{% if cont == nil %}{% assign cont = page.content %}{% endif %}
+
+<span class="reading-time">
+  {% assign words = cont | strip_html | number_of_words %}
+  {% if words <= words_per_minute %}
+      {{ site.data.lang.reading_time_min | replace: "%d", "1" }}
+  {% else %}
+      {% assign reading_time = words | divided_by:words_per_minute %}
+      {{ site.data.lang.reading_time_min | replace: "%d", reading_time }}
+  {% endif %}
+</span>
+
