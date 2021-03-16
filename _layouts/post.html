@@ -162,11 +162,12 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="{{ site.baseurl }}tag/{{ primary | slugify: "latin" }}/">
                                 {% if related_posts > 1 %}
-                                    See all {{ related_posts | minus: 1 }} posts  →
+                                    {% assign related_post_count = related_posts | minus: 1 %}
+                                    {{ site.data.lang.see_all_n_posts | replace: "%d", related_post_count }}  →
                                 {% elsif related_posts == 1 %}
-                                    {{ related_posts }} post  →
+                                    {{ site.data.lang.one_post }}  →
                                 {% else %}
-                                    No posts.
+                                    {{ site.data.lang.no_posts }}
                                 {% endif %}
                             </a>
                         </footer>

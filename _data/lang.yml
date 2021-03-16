@@ -4,5 +4,8 @@ poweredby: 'Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
                     <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
                     <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a>'
 latest_posts: 'Latest Posts'
+see_all_n_posts: 'See all %d posts'
+one_post: '1 post'
+no_posts: 'No posts.'
 read_more: 'Read More'
 author_bio_fallback_end_of_post: 'Read more posts by this author.'
